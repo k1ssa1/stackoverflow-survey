@@ -22,3 +22,26 @@ print(first_ten)
 last_ten = df.tail(10)
 print("****************Last ten rows****************")
 print(last_ten)
+
+# Display all the columns
+print(df.columns)
+
+# Display a specific column
+print(df['Gender'])
+
+# Display a non duplicate values of a column
+print(df['Gender'].value_counts())
+
+# selecting rows
+print("****************selecting multiple rows****************")
+print(df.loc[[0,1,2]])
+print("****************or****************")
+print(df.loc[0:2])
+
+# selecting rows
+print("****************selecting first row****************")
+print(df.loc[0, 'Gender'])
+
+# selecting rows
+print("****************selecting mutiple rows with multiple columns****************")
+print(df.loc[0:2, 'ResponseId':'Employment'])
